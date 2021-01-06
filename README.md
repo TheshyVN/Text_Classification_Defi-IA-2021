@@ -8,4 +8,14 @@
 
 ## *Assigning the correct job category to a job description*
 
-### Introduction:
+### Task overview:
+
+We participed the 5th edition of the so-called Défi IA, which pertains to NLP (Natural Language Processing) and Text Classification. The task is to assign the correct job category to a job description. This is thus a multi-class classification task with 28 classes to choose from.
+
+The data has been retrieved from [CommonCrawl](https://www.wikiwand.com/en/Common_Crawl). The latter has been famously used to train [OpenAI's GPT-3 model](https://www.wikiwand.com/en/GPT-3). One of the goals of this competition is to design a solution that is both accurate as well as fair.
+
+### Tutorial:
+
+The version number of each package is presented in `requirements.txt`.
+
+### Results:
