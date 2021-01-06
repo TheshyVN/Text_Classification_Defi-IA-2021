@@ -19,3 +19,16 @@ The data has been retrieved from [CommonCrawl](https://www.wikiwand.com/en/Commo
 The version number of each package is presented in `requirements.txt`.
 
 ### Results:
+
+### Authors:
+
+Ngo Nghi Truyen Huynh
+
+Ngoc Bao Nguyen
+
+Dinh Triem Phan
+
+Viet Minh Thong Le
+
+Adam Hamidallah
+
