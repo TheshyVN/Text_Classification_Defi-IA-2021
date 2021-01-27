@@ -54,13 +54,13 @@ The main folders of this git are organized as below:
 
 The data folder contains the data on which we train and test the algorithm:
 
-- `train.json`: Contains job descriptions as well as genders for the training set, which contains 217,197 samples.
+- `train.json`: contains job descriptions as well as genders for the training set, which contains 217,197 samples.
 
-- `train_label.csv`: Contains job labels for the training set.
+- `train_label.csv`: contains job labels for the training set.
 
-- `categories_string.csv`: Provides a mapping between job labels and integers, the latter of which are used for scoring submissions.
+- `categories_string.csv`: provides a mapping between job labels and integers, the latter of which are used for scoring submissions.
 
-- `test.json`: Contains job descriptions as well as genders for the test set, which contains 54,300 samples.
+- `test.json`: contains job descriptions as well as genders for the test set, which contains 54,300 samples.
 
 The `output` directory will be generated automatically when running our code:
 
