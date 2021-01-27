@@ -16,7 +16,15 @@ The data has been retrieved from [CommonCrawl](https://www.wikiwand.com/en/Commo
 
 ### Tutorial:
 
-The version number of each package is presented in `requirements.txt`.
+For setting up the environment, we can check the version number of each package, which is presented in `requirements.txt`.
+
+`python BERT_learning.py`
+
+`python BERT_learning.py --bootstrap True --batch_size 32 --epochs 5 --learning_rate 0.00005`
+
+`python BERT_prediction.py`
+
+`python BERT_prediction.py --bootstrap True --batch_size 32 --epochs 5 --learning_rate 0.00005`
 
 ### Results:
 
