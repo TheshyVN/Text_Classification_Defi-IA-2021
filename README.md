@@ -78,7 +78,7 @@ Then, the following command in terminal allows to run the learning and save the 
 
 `python BERT_learning.py`
 
-In order to run a prediction for the test set `test.json` and save it in `/output/submission/`, we run the command below:
+In order to run a prediction for the test set `test.json` and save it in `/output/submission/`, we run the command below (see *Current Issue* section for current bug in this script):
 
 `python BERT_prediction.py`
 
@@ -99,6 +99,18 @@ The arguments of our model here are:
 - `learning_rate`: learning rate in optimization algorithm.
 
 ### Results:
+
+We achieved a public score of 0.80047 and a private score of 0.80789 which lead to the 28-th position and 20-th position on respectively public and private leaderboard of DefiIA2021. The details can be shown in [Kaggle](https://www.kaggle.com/c/defi-ia-insa-toulouse/).
+
+This results is obtained by a Google colab runtime which utilized a Nvidia Tesla T4 as accelerator in a total runtime of 6 hours for original data and 7.5 hours for the bootstrapped data in our attempt of balancing the dataset. All the terminal command are executed through a notebook by using prefixes "!" or "%" before those commands, which should be equivalent to a terminal in a local runtime. 
+
+Why didn't we use a local runtime? Our local runtime had a GTX 1050Ti 4GB as GPU accelerator which did not have enough VRAM to handle a BERT model. Indeed, every attempt to allocating resource for the model led to a dead python kernel. This problem would be solved once we get access to a more powerful local machine. Our solution was to emulate a terminal through a colab notebook, this workaround was necessary. 
+
+### Existing Issues
+
+The command `python BERT_prediction.py` returns `KeyError: 'RegexSplitWithOffsets'` (see `/notebook/terminal.ipynb` for more information) which, based on our research, is a tensorflow bug in recent versions. This problem only exists when `tensorflow.keras.models.save` and `tensorflow.keras.models.load` commands are executed in 2 separate scripts and `tensorflow_text` are being used. Therefore, we are waiting for newer version of tensorflow to fully resolve this bug.
+
+In waiting, our temporary solution is to make a prediction on test dataset within the command `python BERT_learning.py`.
 
 ### Authors:
 
