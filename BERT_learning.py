@@ -314,7 +314,7 @@ pickle.dump(results, open("./output/results/" + model_str + args_str  + ".pkl", 
 print("Result saved.")
 
 ##################
-### Prediction ### this part will be splited into another file (BERT_prediction.py) in future when the problem of tensorflow text could be resovled 
+### Prediction ### This part will be splitted into another file (here is BERT_prediction.py) in the future when the problem of tensorflow text could be resolved. 
 ##################
 ## Data test
 PATH="./data/test/"
