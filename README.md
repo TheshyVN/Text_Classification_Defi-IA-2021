@@ -16,7 +16,7 @@ The data has been retrieved from [CommonCrawl](https://www.wikiwand.com/en/Commo
 
 ### Tutorial:
 
-For setting up the environment, we can check the version number of each package, which is presented in `requirements.txt`.
+For setting the environment, we can check the version number of each package, which is presented in `requirements.txt`.
 
 `python BERT_learning.py`
 
